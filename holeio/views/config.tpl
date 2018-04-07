@@ -14,7 +14,7 @@
 <label for="client_id">Client ID</label><input type="text" name="client_id" id="client_id" value="{{client_id}}"> <br>
 <label for="client_secret">Client Secret</label><input type="text" name="client_secret" id="client_secret" value="{{client_secret}}"> <br>
 <p>With a set client id and secret, visit <a href="#" id="oauth">here</a> to find out your OAuth token</p>
-<label for="token">OAuth Token</label><input type="text" name="token" id="token" value="{{token}}"> <br>
+<label for="token">OAuth Token</label><input type="text" name="token" id="token" value="{{token}}" required> <br>
 </fieldset>
 <fieldset>
 <legend>Directories</legend>
