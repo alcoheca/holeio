@@ -90,6 +90,8 @@ def save_config():
     old_dir = ""
     if config.has_option("directories", "blackhole"):
         old_dir = config.get("directories", "blackhole")
+    config.set('web', 'user', request.forms.user)
+    config.set('web', 'password', request.forms.password)
     config.set('web', 'host', request.forms.host)
     config.set('web', 'root', request.forms.root)
     config.set('oauth', 'client_id', request.forms.client_id)
